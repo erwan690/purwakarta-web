@@ -105,6 +105,18 @@ INSERT INTO `blog_category` (`blog_category_id`, `name`) VALUES
 (5,	'Others'),
 (6,	'Science & technology');
 
+DROP TABLE IF EXISTS `blog_view`;
+CREATE TABLE `blog_view` (
+  `id_blog` int(11) NOT NULL AUTO_INCREMENT,
+  `judul_blog` varchar(45) NOT NULL,
+  `deskripsi` text NOT NULL,
+  `image` varchar(45) NOT NULL,
+  PRIMARY KEY (`id_blog`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `blog_view` (`id_blog`, `judul_blog`, `deskripsi`, `image`) VALUES
+(1,	'12313',	'123123213qeqwe',	'');
+
 DROP TABLE IF EXISTS `call_non_user`;
 CREATE TABLE `call_non_user` (
   `id_call_non_user` int(11) NOT NULL AUTO_INCREMENT,
@@ -461,4 +473,4 @@ INSERT INTO `warung` (`id_warung`, `id_kategori`, `nama_warung`, `telephone`, `l
 (21,	7,	'Sate Maranggi Haur Koneng',	'0813 1078 69',	'-6.577315',	'107.471662',	'Buka Senin - Sabtu (10:00 - 21:00)  ||  Harga Rp. 20.000 - Rp. 50.000 ',	'images/warung/HaurKoneng2.jpg'),
 (22,	2,	'Warung Sate Abah Use',	'0856-5993-54',	'-6.564835',	'107.461966',	'Buka Senin - Sabtu (10:00 - 21:00)  ||  Harga Rp. 20.000 - Rp. 50.000 \r\n',	'images/warung/AbahUse1_(1).jpg');
 
--- 2017-08-24 15:50:47
+-- 2017-08-25 03:59:51

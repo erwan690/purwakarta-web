@@ -219,7 +219,7 @@
                     <a href="<?php echo base_url();?>fasilitas/list_fasilitas">Fasilitas</a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url();?>jurnal/list_jurnal">Blog</a>
+                    <a href="<?php echo base_url();?>blog/">Blog</a>
                 </li>
                 <li>
                     <a href="<?php echo base_url();?>promo/">Promo</a>

@@ -212,7 +212,10 @@ public function  update_promo()
                         $result=$this->promo_model->update_promo($data,$id);
 
                         $old_image=$this->input->post('old_image');
-												unlink($old_image);
+												if ($old_image) {
+													unlink($old_image);
+												}
+
                         if($result==true)
 							{
 
